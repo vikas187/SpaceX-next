@@ -183,6 +183,7 @@ class Home extends React.Component {
                 </div>
             
             </div>
+            <div className="footer">Developed By - Vikas Bhandari</div>
             </div>
         )
     };
