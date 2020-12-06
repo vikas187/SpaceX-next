@@ -1,0 +1,95 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: $m-size;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main {
+    background-color: $color-light-gray;
+    &-title {
+        margin: 0;
+        margin-bottom: $s-size;
+    }
+
+    @include respond(big-desktop) {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+}
+
+.sections {
+    display: flex;
+    width: 100%;
+    @include respond(phone) {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+}
+
+.filters {
+    box-sizing: border-box;
+    background-color: $color-white;
+    max-width: 20%;
+    
+    text-align: center;
+    align-self: flex-start;
+    &-type {
+        font-size: $s-size;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        &__year {
+            cursor: pointer;
+            background-color: $color-light-green;
+            width:40%;
+            border-radius: $xs-size;
+            color: white;
+            padding: $xs-size;
+            box-sizing: border-box;
+            margin: $xs-size;
+            &:hover {
+                background-color: $color-green;
+            }
+            @include respond(phone) {
+                font-size: $xl-size;
+            }
+
+
+        }
+    }
+    @include respond(tab-port) {
+        max-width: 30%;
+    }
+    @include respond(phone) {
+        max-width: 100%;
+        margin: $s-size;
+    }
+
+    
+}
+
+.active {
+    background-color: $color-green;
+}
+
+.launches {
+    box-sizing: border-box;
+    align-self: flex-start;
+    justify-content: start;
+    max-width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    @include respond(tab-port) {
+        max-width: 70%;
+    }
+    @include respond(phone) {
+        max-width: 100%;
+        margin-top: $m-size;
+        flex-direction: column;
+    }
+
+    
+}

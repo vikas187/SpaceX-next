@@ -1,0 +1,32 @@
+.launch-icon {
+    width: 20%;
+    box-sizing: border-box;
+    background-color: $color-white;
+    margin: 0 $m-size;
+    margin-bottom: $m-size;
+    padding: $s-size;
+
+    @include respond(tab-port) {
+        width: 40%;
+    }
+
+    @include respond(phone) {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.launch-image {
+    width: 100%;
+    background-color: $color-light-gray;
+}
+
+.launch-title {
+    color: blue;
+    font-weight: 800;
+}
+
+.launch-key {
+    font-weight: 800;
+}
