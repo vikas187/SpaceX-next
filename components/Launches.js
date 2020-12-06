@@ -59,7 +59,7 @@ class Launches extends React.Component {
                 </ul>
                 <p className="launch-key">Launch Year: {launch.launch_year}</p>
                 <p className="launch-key">Launch Success: {launch.launch_success ? 'true' : 'false'}</p>
-                
+                <p className="launch-key">Successful Landing: {launch.rocket && launch.rocket.first_stage.cores && Array.isArray(launch.rocket.first_stage.cores) && launch.rocket.first_stage.cores[0].land_success? 'true' : 'false'}</p>
                 </div>
             })}
             </React.Fragment>
