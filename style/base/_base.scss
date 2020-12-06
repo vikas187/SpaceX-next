@@ -59,6 +59,9 @@ body {
             margin: $xs-size;
             &:hover {
                 background-color: $color-green;
+                @include respond(phone) {
+                    background-color: $color-light-green;
+                }
             }
             @include respond(phone) {
                 font-size: $xl-size;
