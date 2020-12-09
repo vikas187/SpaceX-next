@@ -49,7 +49,7 @@ class Launches extends React.Component {
             <React.Fragment>
             {this.state.launches.map((launch, index)=>{
                 return <div key={index} className="launch-icon">
-                <img className="launch-image" src={launch.links.mission_patch}></img>
+                <img className="launch-image" src={launch.links.mission_patch_small}></img>
                 <p className="launch-title">{launch.mission_name} #{index+1}</p>
                 <p className="launch-key">Mission ids:</p>
                 <ul>
