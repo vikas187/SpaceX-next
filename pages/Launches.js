@@ -6,7 +6,7 @@ class Launches extends React.Component {
         super(props);
 
         this.state = {
-            launches: []
+            launches: props.data || []
         }
         
     }
@@ -25,16 +25,6 @@ class Launches extends React.Component {
         }
         console.log(url);
         const response = await axios.get(url);
-        if(response.status===200) {
-            const launches = response.data;
-            this.setState({
-                launches
-            });
-        }
-    }
-
-    async componentDidMount(props) {
-        const response = await axios.get(`https://api.spaceXdata.com/v3/launches?limit=100`);
         if(response.status===200) {
             const launches = response.data;
             this.setState({

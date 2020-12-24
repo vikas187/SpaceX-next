@@ -49,6 +49,7 @@ body {
         flex-wrap: wrap;
         justify-content: space-between;
         &__year {
+            border: 0;
             cursor: pointer;
             background-color: $color-light-green;
             width:40%;
